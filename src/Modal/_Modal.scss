@@ -1,0 +1,13 @@
+@use '../variables' as *;
+@forward '../variables';
+
+.modal-container {
+	background-color: rgba(32 35 41 / 0.8);
+	position: fixed;
+	inset-block: 0;
+	inset-inline: 0;
+	display: grid;
+	place-items: center;
+	color: $font-color1;
+	z-index: 5;
+}
