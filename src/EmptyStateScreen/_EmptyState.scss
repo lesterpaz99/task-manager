@@ -1,0 +1,46 @@
+@use '../variables' as *;
+@forward '../variables';
+
+.screen-container {
+	inline-size: 100%;
+	block-size: 100%;
+	display: grid;
+	place-items: center;
+	margin-block-start: 4rem;
+
+	.description-state-container {
+		text-align: center;
+	}
+}
+
+.state-img-container img {
+	inline-size: 14rem;
+}
+
+.description-state-container h2 {
+	font-size: 2.8rem;
+}
+
+.description-state-container p {
+	opacity: 0.9;
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+
+.description-state-container p span {
+	display: inline-block;
+	background: #fa198b;
+	border-radius: 50%;
+	block-size: 2rem;
+	inline-size: 1.6rem;
+	color: rgba(255, 255, 255, 0.9);
+	padding: 0.3rem;
+	text-align: center;
+}
+
+.create-todo-icon {
+	color: $third-color;
+	font-size: 2rem;
+	vertical-align: middle;
+	border-radius: 50%;
+}
