@@ -1,0 +1,36 @@
+@use './variables' as *;
+@forward './variables';
+
+:root {
+	font-size: 62.5%;
+}
+
+.main-container {
+	box-sizing: border-box;
+	inline-size: 100%;
+	block-size: 100%;
+	padding: 3rem;
+	position: relative;
+}
+
+img {
+	max-inline-size: 100%;
+	block-size: auto;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: $primary-color;
+	color: $font-color1;
+	inline-size: 100%;
+	block-size: 100%;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
