@@ -1,0 +1,32 @@
+@use '../variables' as *;
+@forward '../variables';
+
+form {
+	display: grid;
+	place-content: center;
+	margin-block-end: 4rem;
+	letter-spacing: 0.4px;
+}
+
+input {
+	padding: 1rem;
+	background-color: rgba($secondary-color, 0.5);
+	border: 1px solid transparent;
+	border-radius: 10px;
+	color: $font-color1;
+	font-size: 1.6rem;
+	box-shadow: 0 0 8px -4px #000000fa;
+}
+
+input::placeholder {
+	color: $font-color2;
+	font-size: 1.4rem;
+}
+
+input:focus {
+	outline: 2px solid $font-color1;
+}
+
+input:disabled {
+	opacity: 25%;
+}

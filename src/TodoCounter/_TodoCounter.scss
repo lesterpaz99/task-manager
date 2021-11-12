@@ -1,0 +1,26 @@
+@use '../variables' as *;
+@forward '../variables';
+
+.counter__title {
+	font-size: 4rem;
+}
+
+.sayhi-icon {
+	vertical-align: middle;
+	color: beige;
+}
+
+.todocounter {
+	font-size: 1.8rem;
+	text-align: center;
+	color: $font-color1;
+}
+
+.todocounter--loading {
+	opacity: 25%;
+}
+
+.todo-icon {
+	vertical-align: middle;
+	font-size: 4rem;
+}
