@@ -1,0 +1,68 @@
+@use '../variables' as *;
+@forward '../variables';
+
+.todo-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.4rem 1.6rem;
+	background-color: $secondary-color;
+	color: $font-color1;
+	border-radius: 16px;
+	font-size: 1.8rem;
+	gap: 1rem;
+	text-align: center;
+
+	.check-container {
+		inline-size: 2rem;
+		block-size: 2rem;
+		border: 2px solid $third-color;
+		border-radius: 50%;
+		position: relative;
+		display: grid;
+		place-items: center;
+	}
+
+	.task-done {
+		text-decoration: line-through;
+	}
+
+	.delete-todo {
+		background-color: transparent;
+		border: 1px solid transparent;
+		color: rgba(white, 0.7);
+		font-weight: 700;
+		font-size: 2rem;
+		cursor: pointer;
+		block-size: 62px;
+	}
+}
+
+.remove-icon {
+	color: rgba(white, 0.7);
+	font-size: 2rem;
+}
+
+.delete-todo:hover .remove-icon {
+	color: rgba($alert-color, 0.6);
+}
+
+.check-container {
+	.check-input {
+		opacity: 0;
+		position: relative;
+		z-index: 2;
+		block-size: 2rem;
+		inline-size: 2rem;
+		margin: 0;
+	}
+
+	.completed {
+		background-color: $third-color;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		z-index: 1;
+	}
+}
