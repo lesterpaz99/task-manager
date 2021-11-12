@@ -1,0 +1,29 @@
+@use '../variables' as *;
+@forward '../variables';
+
+button.create-todo {
+	background-color: $third-color;
+	border-radius: 50%;
+	block-size: 6rem;
+	inline-size: 6rem;
+	border: 1px solid transparent;
+	color: $font-color1;
+	font-size: 4rem;
+	display: grid;
+	place-items: center;
+	font-weight: 300;
+	cursor: pointer;
+	position: fixed;
+	inset-inline-end: 3rem;
+	inset-block-end: 3rem;
+	box-shadow: 0 0 12px $third-color, 0 0 16px $third-color;
+	transition: 0.3s ease-in-out transform;
+	z-index: 10;
+
+	&:hover {
+		box-shadow: 0 0 12px $third-color, 0 0 16px $third-color,
+			0 0 24px $third-color;
+		transform: rotate(224deg);
+		transition: 0.3s ease-in-out transform;
+	}
+}
