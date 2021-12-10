@@ -34,7 +34,7 @@ function useTodos() {
 		openModal,
 		setOpenModal,
 		synchronizeTodos: synchronize,
-		saveTodos: (newTodos) => saveTodos(newTodos),
+		saveTodos,
 	};
 }
 
